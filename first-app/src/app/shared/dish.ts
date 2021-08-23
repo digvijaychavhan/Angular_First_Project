@@ -1,4 +1,7 @@
 //created manually not generated
+import { Comment } from './comment';
+
+//Comment we have declared seprately but it was also possible to declare comment class here and use it in Dish
 
 export class Dish {
     id: string;
@@ -8,8 +11,9 @@ export class Dish {
     featured?: boolean;   //  ?makes property optional
     label: string;
     price: string;
-    description: string;
+    description ?: string;
 
+    comments: Comment[];
     constructor() {
         this.id = '';
         this.name = '';
@@ -18,5 +22,6 @@ export class Dish {
         this.label = '';
         this.price = '';
         this.description = '';
+        this.comments=[];
     }
 }
