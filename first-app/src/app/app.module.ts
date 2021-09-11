@@ -23,7 +23,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
-
+import { PromotionService } from './services/promotion.service';
 
 @NgModule({
   declarations: [
@@ -50,7 +50,7 @@ import { ContactComponent } from './contact/contact.component';
     //upto this
 
   ],
-  providers: [DishService],//services are added here
+  providers: [DishService,PromotionService],//services are added here
   bootstrap: [AppComponent]
 })
 export class AppModule { }

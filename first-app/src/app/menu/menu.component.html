@@ -8,8 +8,8 @@
 
   <div fxFlex>
     <mat-grid-list cols="2" rowHeight="200px" >
-        <mat-grid-tile *ngFor="let dish of dishes" (click)="onSelect(dish)">
-          <img height='200px' src={{dish.image}} alt={{dish.name}}>
+        <mat-grid-tile *ngFor="let dish of dishes" [routerLink] = "[ '/dishdetail' , dish.id]">
+          <img height='200px' src={{dish.image}} alt={{dish.name}}> 
           <mat-grid-tile-footer>  <h1 matLine> {{dish.name | uppercase}} </h1></mat-grid-tile-footer>
          
           
@@ -18,7 +18,7 @@
   </div>
   
   <div fxFlex *ngIf="selectedDish">
-    <app-dishdetail [dish] = "selectedDish"></app-dishdetail>
+    <app-dishdetail></app-dishdetail>
   </div>
 
   <!-- <mat-list fxFlex>
@@ -30,5 +30,8 @@
       </p>
     </mat-list-item>
   </mat-list>
+
+  (click)="onSelect(dish)"      is used when we give input to angular
+   [dish] = "selectedDish"      is used when we want to angular to take input on its ownS
 -->
 </div>
