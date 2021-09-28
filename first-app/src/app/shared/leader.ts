@@ -7,5 +7,5 @@ export class Leader {
         abbr ?: string;
         featured ?: boolean;
        
-        description ?: String;
+        description ?: string;
 }
