@@ -17,12 +17,12 @@
      
       <mat-form-field >
         <input matInput placeholder="Username" type="text" [(ngModel)]="user.username" name="username" #username="ngModel" required>
-        <mat-error *ngIf = "username.errors?.required">Username required</mat-error>  
+        <mat-error *ngIf = "username.errors?.['required']">Username required</mat-error>  
       </mat-form-field>
       
       <mat-form-field>
         <input matInput placeholder="Password" type="password" [(ngModel)]="user.password" name="password" #password="ngModel" required>
-        <mat-error *ngIf = "password.errors?.required">Password required</mat-error>  
+        <mat-error *ngIf = "password.errors?.['required']">Password required</mat-error>  
       </mat-form-field>
       
       <mat-checkbox [(ngModel)]="user.remember" name="remember">Remember Me</mat-checkbox>

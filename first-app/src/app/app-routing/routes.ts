@@ -1,5 +1,3 @@
-// used to keep all routes in one file otherwise no need, 
- 
 import { Routes } from '@angular/router';
 
 import { MenuComponent } from '../menu/menu.component';
