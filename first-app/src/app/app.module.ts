@@ -33,6 +33,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 //import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { MatSliderModule } from '@angular/material/slider'
 
 @NgModule({
   declarations: [
@@ -67,6 +68,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatSlideToggleModule,
     MatProgressSpinnerModule,
     //AngularFontAwesomeModule
+    MatSliderModule
+
   ],
   providers: [
     DishService , 
